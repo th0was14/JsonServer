@@ -5,7 +5,8 @@
   "author": "Thomas CAILLARD <thomas.caillard@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "node index.js"
   },
   "dependencies": {
     "json-server": "^0.15.1"
