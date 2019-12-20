@@ -1,6 +1,6 @@
 {
   "builds": [{
-    "src": "*.js",
+    "src": "api/index.js",
     "use": "@now/node"
   }]
 }
