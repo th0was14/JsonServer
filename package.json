@@ -1,11 +1,11 @@
 {
   "name": "JsonServer",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "api/index.js",
   "author": "Thomas CAILLARD <thomas.caillard@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
+    "start": "node api/index.js",
     "build": "echo build"
   },
   "dependencies": {
