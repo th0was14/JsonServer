@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "peguet florian",
+      "test": "thomas CAILLARD"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "body": "switch",
+      "postId": 1,
+      "id": 2
+    },
+    {
+      "body": "switch deux",
+      "postId": 2,
+      "id": 3
+    },
+    {
+      "body": "switch trois",
+      "postId": 3,
+      "id": 4
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "clashFriend": [
+    {
+      "id": 1,
+      "clashId": "9GU0880R",
+      "name": "Moi"
+    },
+    {
+      "id": 2,
+      "clashId": "2GV8PRQ89",
+      "name": "Hablih"
+    },
+    {
+      "id": 3,
+      "clashId": "2YYJ9RP9",
+      "name": "Benji"
+    }
+  ]
+}
