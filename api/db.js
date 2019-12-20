@@ -1,4 +1,5 @@
-{
+module.exports = () => {
+  const data = {
   "posts": [
     {
       "id": 1,
@@ -49,4 +50,6 @@
       "name": "Benji"
     }
   ]
-}
+  };
+  return data;
+};

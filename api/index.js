@@ -1,12 +1,18 @@
-const jsonServer = require('json-server');
-const server = jsonServer.create();
-const router = jsonServer.router('db.json');
-const middlewares = jsonServer.defaults();
+var jsonServer = require("json-server");
+var db = require("./db.js");
+var fs = require("fs");
+var os = require("os");
+
+var filePath = os.tmpdir() + "/db.json";
+fs.writeFileSync(filePath, JSON.stringify(db()));
+
+var server = jsonServer.create();
+var router = jsonServer.router(filePath);
+var middlewares = jsonServer.defaults();
+var port = 3004;
+
 server.use(middlewares);
 server.use(router);
-if (!process.env.NOW_REGION) {
-    server.listen(3004, () => {
-        console.log('JSON Server is running')
-    })
-}
-module.exports = server;
+server.listen(port, function() {
+    console.log("JSON Server is running on http://localhost:" + port);
+});
