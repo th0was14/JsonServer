@@ -1,6 +1,6 @@
 {
   "builds": [{
-    "src": "JsonServer",
+    "src": "*.js",
     "use": "@now/node"
   }]
 }
